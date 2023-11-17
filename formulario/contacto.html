@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/icon.png">
+</head>
+
+<body>
+    <form> 
+        <fieldset>
+            <legend>PERSONA</legend>
+            <label for="name">Nombre</label>
+            <input id="name" type="text" name="Nombre" placeholder="Escriba su Nombre" required>
+            <br />
+            <label for="email">e-mail</label>
+            <input id="email" type="email" name="email" placeholder="Escriba su correo electronico" required>
+            <br />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>DISPOSITIVOS AVERIADOS</legend>
+            <label for="si">Si</label>
+            <input id="si" type="radio" value="si" name="si">
+            <br />
+            <label for="no">No</label>
+            <input id="no" type="radio" value="no" name="no">
+            <br />
+            <p>Si tiene varios aparatos averiados seleccionónelos manteniendo pulsada la tecla "Ctrl"</p>
+            <br />
+            <label for="tipo">Tipo de Dispositivo</label>
+            <select name="Dispositivo" multiple="multiple" id="Dispositivo">
+                <option value="PC">PC</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Portátil">Portátil</option>
+                <option value="Monitor">Monitor</option>
+                <option value="Impresora">Impresora</option>
+            </select>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>COMENTARIOS</legend>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" cols="40" rows="4"></textarea>
+        </fieldset>
+        <br />
+        <legend>Acepto ingresar en la lista de usuarios y recibir comunicaciones y actualizaciones</legend>
+        <label for="si">Si</label>
+        <input id="si" type="checkbox" value="si" name="si">
+        <label for="no">No</label>
+        <input id="no" type="checkbox" value="no" name="no">
+        <br />
+        <input type="submit" value="Enviar" name="enviar">
+        <input type="reset" value="Restablecer" name="restablecer">
+    </form>
+</body>
